@@ -1,6 +1,6 @@
 from stegano import lsb
 image_path = "example.png"
-pesan = "INFORMATIKA TELKOM UNIVERCITY SURABAYA"
+pesan = "Contoh Pesan"
 secret = lsb.hide(image_path, pesan)
 secret.save('hidden_message.png')
 print("Completed Hiding text")

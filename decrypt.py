@@ -1,9 +1,13 @@
 from stegano import lsb
 
 def getting_encrypt_text(image_path):
-    text = lsb.reveal(image_path)
-    print("Completed Reveal the Text!")
-    return text
+    try:
+        text = lsb.reveal(image_path)
+        print("Completed Reveal the Text!")
+        return text
+    except Exception as e:
+        print(f"Error while getting text from {image_path} : {e}")
+        return None
 
 def element_symbols_to_text(element_symbols):
     # Kamus data untuk mengaitkan singkatan unsur dengan nomor atom

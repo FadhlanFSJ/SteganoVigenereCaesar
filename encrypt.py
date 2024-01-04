@@ -94,8 +94,9 @@ def insert_text_to_image(text, image_path):
     print("Completed Hiding text")
 
 # Contoh penggunaan:
-pesan = "Telkom University Surabaya"
-keys = ["Informatika", "Angkatan", "Pertama"]
+pesan = input("Masukkan pesan yang ingin di enkripsi: ")
+keys = input("Masukkan Key Vigenere sebanyak 3 (Pisahkan dengan Spasi): ").split() # keys = ["Informatika", "Angkatan", "Pertama"]
+print("Keys Vigenere :", keys)
 shift_keys = [3, 4, 5]
 image_path = 'example.png'
 print("Pesan Awal : ", pesan)

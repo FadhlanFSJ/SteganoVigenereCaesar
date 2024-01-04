@@ -1,1 +1,1 @@
-data
+keys = input("Masukkan Key Vigenere sebanyak 3 (Pisahkan dengan Spasi): ").split()

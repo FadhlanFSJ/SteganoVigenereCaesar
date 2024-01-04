@@ -33,7 +33,7 @@ def element_symbols_to_text(element_symbols):
         'Rg': '111', 'Cn': '112', 'Nh': '113', 'Fl': '114', 'Mc': '115',
         'Lv': '116', 'Ts': '117', 'Og': '118',
         #! Tambahan data yang tidak ada pada Tabel Periodik, agar data tetap ter dekripsi!
-        'Xy': '119', 'Bc': '120', 'Zf': '121', '122': 'We'
+        'Xy': '119', 'Bc': '120', 'Zf': '121', 'We': '122'
     }
 
     # Memecah simbol unsur menjadi pasangan dua huruf
@@ -109,7 +109,8 @@ def vigenere_decrypt(cipher_text, keys):
 
 image_path = 'hidden_message.png'
 shift_keys = [3, 4, 5]
-keys = ["Informatika", "Angkatan", "Pertama"]
+keys = input("Masukkan Key Vigenere sebanyak 3 (Pisahkan dengan Spasi): ").split()
+print("Key Vigenere : ", keys)
 encrypted_text = getting_encrypt_text(image_path)
 print("Encrypted Text: ",encrypted_text)
 caesar_cipher_text = element_symbols_to_text(encrypted_text)

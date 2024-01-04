@@ -7,7 +7,7 @@ def getting_encrypt_text(image_path):
         return text
     except Exception as e:
         print(f"Error while getting text from {image_path} : {e}")
-        return None
+        sys.exit("Exit Program.....")
 
 def element_symbols_to_text(element_symbols):
     # Kamus data untuk mengaitkan singkatan unsur dengan nomor atom

@@ -1,4 +1,5 @@
 from stegano import lsb
+import sys
 
 def getting_encrypt_text(image_path):
     try:
@@ -7,7 +8,7 @@ def getting_encrypt_text(image_path):
         return text
     except Exception as e:
         print(f"Error while getting text from {image_path} : {e}")
-        sys.exit("Exit Program.....")
+        sys.exit(0)
 
 def element_symbols_to_text(element_symbols):
     # Kamus data untuk mengaitkan singkatan unsur dengan nomor atom

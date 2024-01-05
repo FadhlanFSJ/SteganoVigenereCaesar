@@ -82,6 +82,7 @@ def text_to_element_symbols(text):
 
     # Membagi daftar ASCII menjadi pasangan dua digit
     digit_pairs = ['{:02d}'.format(value) for value in ascii_values]
+    # print("Digit : ", digit_pairs)
 
     # Mengekstrak unsur dari kamus data
     element_symbols = [element_data.get(pair, '??') for pair in digit_pairs]
